@@ -1,5 +1,17 @@
 #!/bin/bash
 
+# create data folders
+mkdir -p data
+mkdir -p ans
+mkdir -p pitch
+mkdir -p output
+mkdir -p output/est
+mkdir -p output/single
+mkdir -p output/total
+mkdir -p log
+mkdir -p loss
+
+
 # get training data (preprocessed)
 wget --no-check-certificate "https://drive.google.com/uc?export=download&id=1FqWzk6qWEp80RWbFV4MCAhmSXX07uUEy" -O data/TONAS_note.zip
 wget --no-check-certificate "https://drive.google.com/uc?export=download&id=13MOh5tEQs0ftmVJ9ueczIdWNcBEXmAMX" -O data/TONAS_onset2.zip
