@@ -45,9 +45,9 @@ def linearize(Z, CF, start_f, end_f):
 
 
 pitch_file_name = "pitch/ISMIR2014/"+str(sys.argv[1])+"_P"
-est_file_name = "output/est/p_exp2/"+str(sys.argv[1])+"_test"
+est_file_name = "output/est/"+str(sys.argv[1])+"_CV_test"
 ref_file_name = "ans/ISMIR2014_ans/"+str(sys.argv[1])+".GroundTruth"
-exp_file_name = "output/est/p_exp1/"+str(sys.argv[1])+"_test"
+exp_file_name = "output/est/"+str(sys.argv[1])+"_CD_test"
 Z_file_name = "data/ISMIR2014_note/"+str(sys.argv[1])+"_Z"
 CF_file_name = "data/ISMIR2014_note/"+str(sys.argv[1])+"_CF"
 out_file = "img/P_img_"+str(sys.argv[1])+".png"
@@ -168,7 +168,7 @@ plt.xlabel("t (s)", fontsize=16)
 plt.ylabel("f (Hz)", fontsize=16)
 plt.grid(True, axis='y', alpha=0.7, linestyle='-.')
 plt.legend(handles=[pitch_contour, interval1, interval2, interval3], fontsize=14, loc='lower left')
-#plt.show(fig)
+plt.show(fig)
 #plt.xlabel('Time(s)')
 #plt.ylabel('Frequency(Hz)')
 #plt.grid(True, axis='y')
